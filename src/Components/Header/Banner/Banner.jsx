@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[750px] ">
       {/* <!-- Background image with an overlay --> */}
       <div className="absolute top-0 right-0 bottom-0 left-0 bg-[url('https://i.ibb.co/m89QXNg/Rectangle-4281.png')] bg-cover bg-center bg-no-repeat h-[600px]"></div>
 

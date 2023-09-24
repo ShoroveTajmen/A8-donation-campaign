@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
-import Banner from "../Banner/Banner";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="flex justify-between items-center py-6 shadow-md px-5">
+      <nav className="flex justify-between items-center py-6  px-5">
         <Logo></Logo>
 
         <ul className="flex gap-10 font-bold text-lg">
@@ -34,7 +33,7 @@ const Navbar = () => {
                   : ""
               }
             >
-             Donation
+              Donation
             </NavLink>
           </li>
           <li>

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
+import Banner from "../Banner/Banner";
 
 const Navbar = () => {
   return (

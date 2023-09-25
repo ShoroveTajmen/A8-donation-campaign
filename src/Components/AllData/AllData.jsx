@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import DataCard from "./DataCard";
+import DataCard from "./DataCards";
 
 
 const AllData = ({data}) => {

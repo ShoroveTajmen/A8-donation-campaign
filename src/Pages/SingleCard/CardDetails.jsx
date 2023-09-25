@@ -42,8 +42,6 @@ const CardDetails = ({ card }) => {
   }
 
 
-
-
   return (
     <div className="py-5">
       <div className="w-[1320px]  mx-auto">

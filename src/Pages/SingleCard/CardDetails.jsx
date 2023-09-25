@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import swal from "sweetalert";
+
 const CardDetails = ({ card }) => {
+
+
   const {
     id,
     picture,
@@ -12,6 +16,34 @@ const CardDetails = ({ card }) => {
     description,
     price,
   } = card || {};
+
+
+  const handleCardAddToDonation = () => {
+    //add card data to local storage
+    const addedCardsArray = [];
+    const cardItem = JSON.parse(localStorage.getItem('card'));
+
+    //when localstorage is empty if block will be executed
+    if(!cardItem){
+      addedCardsArray.push(card);
+      localStorage.setItem('card', JSON.stringify(addedCardsArray));
+      swal("Good job!", "Card added successfully", "success")
+    }else{
+      const isExit = cardItem.find(card => card.id === id);
+      //if this isn't already exist in localstorage then id will be added
+      if(!isExit){
+        addedCardsArray.push(...cardItem, card);
+        localStorage.setItem('card', JSON.stringify(addedCardsArray));
+        swal("Good job!", "Card added successfully", "success");
+      }else{
+        swal("Error!", "Duplicate Card can't be added", "error");
+      }
+    }
+  }
+
+
+
+
   return (
     <div className="py-5">
       <div className="w-[1320px]  mx-auto">
@@ -26,6 +58,7 @@ const CardDetails = ({ card }) => {
             {" "}
           </div>
           <button
+          onClick={handleCardAddToDonation}
             className="absolute top-[660px] left-[330px] p-3 text-center rounded font-semibold text-white"
             style={{ backgroundColor: `${text_color}` }}
           >

@@ -16,7 +16,7 @@ const Donation = () => {
 
     return (
         <div>
-           <div className="grid grid-cols-2 gap-5">
+           <div className="grid grid-cols-2 gap-5 mt-14">
             {
                 isShow ? 
                 donateCard.map(card => <DonationCard key={card.id} card={card}></DonationCard>) :
@@ -27,9 +27,9 @@ const Donation = () => {
             donateCard.length > 2 && (
                 <button
                 onClick={()=> setIsShow(!isShow)}
-                className="px-5 bg-green-200 block mx-auto"
+                className="px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"
                 >
-                    {isShow ? "" : "See More"}
+                    {isShow ? '' : "See More"}
 
                 </button>
             )

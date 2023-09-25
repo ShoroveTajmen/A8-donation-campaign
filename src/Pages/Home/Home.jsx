@@ -8,8 +8,8 @@ const Home = () => {
     // console.log(data);
     return (
         <div>
-            <Banner></Banner>
-            <AllData data={data}></AllData>
+            <Banner data={data}></Banner>
+            <AllData ></AllData>
         </div>
     );
 };

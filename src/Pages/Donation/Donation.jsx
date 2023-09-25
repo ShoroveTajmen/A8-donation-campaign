@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DonationCard from "./DonationCard";
+// eslint-disable-next-line no-unused-vars
 import Statistics from "../Statistics/Statistics";
 
 
@@ -28,9 +29,9 @@ const Donation = () => {
             donateCard.length > 4 && (
                 <button
                 onClick={()=> setIsShow(!isShow)}
-                className="px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"
+                className=" capitalize px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"
                 >
-                    {isShow ? '' : "See More"}
+                    {isShow ? '' : "See All"}
 
                 </button>
             )

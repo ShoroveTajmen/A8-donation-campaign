@@ -14,24 +14,26 @@ const CardDetails = ({ card }) => {
   } = card || {};
   return (
     <div className="py-5">
-      <div>
-        <div className=" w-[1600px] h-[700px] mx-auto">
+      <div className="w-[1320px]  mx-auto">
+        <div className="">
           <img
-            className="relative w-[1320px] h-[700px] mx-auto rounded-b-3xl"
+            className="relative w-[1320px] h-[600px] mx-auto rounded-b-3xl"
             src={picture}
             alt=""
           />
 
-          <div className="w-[1320px]  h-[120px] bg-black opacity-50 absolute top-[720px] left-[300px] rounded-b-3xl">
+          <div className="w-[1320px]  h-[120px] bg-black opacity-50 absolute top-[620px] left-[300px] rounded-b-3xl">
             {" "}
           </div>
           <button
-            className="absolute top-[760px] left-[330px] p-3 text-center rounded font-semibold text-white"
+            className="absolute top-[660px] left-[330px] p-3 text-center rounded font-semibold text-white"
             style={{ backgroundColor: `${text_color}` }}
           >
             Donate {price}
           </button>
         </div>
+        <h1 className="font-bold text-4xl mt-9">{title}</h1>
+        <p className="text-gray-700">{description}</p>
       </div>
     </div>
   );

@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import { Link, useNavigate } from "react-router-dom";
+
 const DonationCard = ({ card }) => {
   const {
     id,
@@ -11,8 +15,10 @@ const DonationCard = ({ card }) => {
     price,
   } = card || {};
 
+  const navigate = useNavigate();
+
   return (
-    <div >
+    <div>
       <div
         className="flex items-center bg-white rounded-lg h-[200px]"
         style={{
@@ -40,14 +46,15 @@ const DonationCard = ({ card }) => {
           <h3 className="font-semibold" style={{ color: `${text_color}` }}>
             {price}
           </h3>
-          <button
-            className="text-white font-semibold w-[120px] p-2 mt-2 rounded"
-            style={{
-              backgroundColor: `${text_color}`,
-            }}
-          >
-            View Details
-          </button>
+            <button
+            onClick={()=>navigate(`/cards/${id}`)}
+              className="text-white font-semibold w-[120px] p-2 mt-2 rounded block"
+              style={{
+                backgroundColor: `${text_color}`,
+              }}
+            >
+              View Details
+            </button>
         </div>
       </div>
     </div>

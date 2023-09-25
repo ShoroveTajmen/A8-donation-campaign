@@ -20,11 +20,11 @@ const Donation = () => {
             {
                 isShow ? 
                 donateCard.map(card => <DonationCard key={card.id} card={card}></DonationCard>) :
-                donateCard.slice(0,2).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
+                donateCard.slice(0,4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
             }
            </div>
            {
-            donateCard.length > 2 && (
+            donateCard.length > 4 && (
                 <button
                 onClick={()=> setIsShow(!isShow)}
                 className="px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"

@@ -48,17 +48,17 @@ const CardDetails = ({ card }) => {
       <div className="w-full md:w-[700px] lg:w-[1320px]  mx-auto">
         <div className="">
           <img
-            className="relative w-[1320px] h-[260px] md:h-[600px] mx-auto rounded-b-xl md:rounded-b-3xl md:rounded-t-3xl"
+            className="relative w-[1320px] h-[260px] md:h-[600px] lg:h-[700px] mx-auto rounded-b-xl md:rounded-b-3xl md:rounded-t-3xl"
             src={picture}
             alt=""
           />
 
-          <div className="w-full md:w-[700px] lg:w-[1320px] h-[100px]  md:h-[120px] bg-black opacity-50 absolute top-[355px] md:top-[620px] md:left-[33px]  lg:left-[300px] md:rounded-b-3xl rounded-b-xl">
+          <div className="w-full md:w-[700px] lg:w-[1320px] h-[100px]  md:h-[120px] bg-black opacity-50 absolute top-[355px] md:top-[620px] lg:top-[720px] md:left-[33px]  lg:left-[292px] md:rounded-b-3xl rounded-b-xl">
             {" "}
           </div>
           <button
           onClick={handleCardAddToDonation}
-            className="absolute top-[385px] md:top-[660px] left-[25px] md:left-[70px] lg:left-[330px] p-2 md:p-3 text-center rounded font-semibold text-white"
+            className="absolute top-[385px] md:top-[660px] lg:top-[760px] left-[25px] md:left-[70px] lg:left-[330px] p-2 md:p-3 text-center rounded font-semibold text-white"
             style={{ backgroundColor: `${text_color}` }}
           >
             Donate {price}

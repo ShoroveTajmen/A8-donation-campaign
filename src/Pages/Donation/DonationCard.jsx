@@ -31,7 +31,7 @@ const DonationCard = ({ card }) => {
           src={picture}
           alt=""
         />
-        <div className="flex flex-col justify-between p-4 h-[190px] md:h-[220px] lgg:h-[220px] ">
+        <div className="flex flex-col justify-between p-4 h-[190px] md:h-[220px] lg:h-[200px] ">
           <h5
             className="mb-2  p-1 w-[100px] rounded text-center"
             style={{

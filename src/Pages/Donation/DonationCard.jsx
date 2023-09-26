@@ -19,19 +19,19 @@ const DonationCard = ({ card }) => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div >
       <div
-        className="flex items-center bg-white rounded-lg h-[200px]"
+        className="flex flex-col md:flex-row items-center bg-white rounded-lg h-[350px] md:h-[200px]"
         style={{
           backgroundColor: `${card_background_color}`,
         }}
       >
         <img
-          className=" w-[220px] rounded-t-lg h-[200px] rounded-lg"
+          className=" w-[220px] rounded-t-lg h-[150px] md:h-[200px] rounded-lg"
           src={picture}
           alt=""
         />
-        <div className="flex flex-col justify-between p-4 ">
+        <div className="flex flex-col justify-between p-4 h-[190px] ">
           <h5
             className="mb-2 p-1 w-[100px] rounded text-center"
             style={{
@@ -41,7 +41,7 @@ const DonationCard = ({ card }) => {
           >
             {category}
           </h5>
-          <p className=" text-2xl font-bold text-black dark:text-gray-400">
+          <p className=" text-lg md:text-2xl font-bold text-black dark:text-gray-400">
             {title}
           </p>
           <h3 className="font-semibold" style={{ color: `${text_color}` }}>
@@ -49,7 +49,7 @@ const DonationCard = ({ card }) => {
           </h3>
             <button
             onClick={()=>navigate(`/cards/${id}`)}
-              className="text-white font-semibold w-[120px] p-2 mt-2 rounded block"
+              className="text-white font-semibold w-[120px] p-1 md:p-2 mt-2 rounded block"
               style={{
                 backgroundColor: `${text_color}`,
               }}

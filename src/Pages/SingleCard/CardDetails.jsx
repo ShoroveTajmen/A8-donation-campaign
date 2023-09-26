@@ -48,7 +48,7 @@ const CardDetails = ({ card }) => {
       <div className="w-full md:w-[1320px]  mx-auto">
         <div className="">
           <img
-            className="relative w-[1320px] md:h-[600px] mx-auto rounded-b-xl md:rounded-b-3xl"
+            className="relative w-[1320px] h-[260px] md:h-[600px] mx-auto rounded-b-xl md:rounded-b-3xl"
             src={picture}
             alt=""
           />

@@ -29,7 +29,7 @@ const Donation = () => {
             donateCard.length > 4 && (
                 <button
                 onClick={()=> setIsShow(!isShow)}
-                className=" capitalize px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"
+                className="mb-5 md:mb-0 capitalize px-5 bg-[#009444] block mx-auto rounded-lg text-white font-semibold text-2xl  mt-7"
                 >
                     {isShow ? '' : "See All"}
 

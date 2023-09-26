@@ -44,28 +44,28 @@ const CardDetails = ({ card }) => {
 
 
   return (
-    <div className="py-5">
-      <div className="w-[1320px]  mx-auto">
+    <div className="py-14 md:py-5">
+      <div className="w-full md:w-[1320px]  mx-auto">
         <div className="">
           <img
-            className="relative w-[1320px] h-[600px] mx-auto rounded-b-3xl"
+            className="relative w-[1320px] md:h-[600px] mx-auto rounded-b-xl md:rounded-b-3xl"
             src={picture}
             alt=""
           />
 
-          <div className="w-[1320px]  h-[120px] bg-black opacity-50 absolute top-[620px] left-[300px] rounded-b-3xl">
+          <div className="w-full md:w-[1320px] h-[100px]  md:h-[120px] bg-black opacity-50 absolute top-[355px] md:top-[620px]  md:left-[300px] md:rounded-b-3xl rounded-b-xl">
             {" "}
           </div>
           <button
           onClick={handleCardAddToDonation}
-            className="absolute top-[660px] left-[330px] p-3 text-center rounded font-semibold text-white"
+            className="absolute top-[385px] md:top-[660px] left-[25px] md:left-[330px] p-2 md:p-3 text-center rounded font-semibold text-white"
             style={{ backgroundColor: `${text_color}` }}
           >
             Donate {price}
           </button>
         </div>
-        <h1 className="font-bold text-4xl mt-9">{title}</h1>
-        <p className="text-gray-700">{description}</p>
+        <h1 className="font-bold text-3xl md:text-4xl mt-9 ml-[35px] md:ml-0">{title}</h1>
+        <p className="text-gray-700 ml-[35px] md:ml-0 mt-2">{description}</p>
       </div>
     </div>
   );

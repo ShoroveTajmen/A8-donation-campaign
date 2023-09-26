@@ -64,15 +64,15 @@ const Statistics = () => {
   };
 
   return (
-    <div className="mt-10">
-      <ResponsiveContainer width="100%" height={600}>
+    <div className="mt-4 md:mt-10">
+      <ResponsiveContainer width="100%" height={500}>
         <PieChart>
           <Pie
             data={pieData}
             cx="50%"
             cy="50%"
             labelLine={false}
-            outerRadius={250}
+            outerRadius={200}
             fill="#00C49F"
             dataKey="value" 
             label={renderCustomizedLabel}
@@ -87,11 +87,11 @@ const Statistics = () => {
           <Tooltip formatter={(value) => `${value}%`} />
         </PieChart>
       </ResponsiveContainer>
-      <div className="flex justify-center items-center gap-2 ">
+      <div className="flex justify-center items-center gap-2 mb-5 md:mb-0">
         <h1>Your Donation</h1>
-        <hr className="bg-[#00C49F] w-[100px] h-[12px] mr-[50px] " />
+        <hr className="bg-[#00C49F] w-[50px] md:w-[100px] h-[12px] mr-[50px] " />
         <h1>Total Donation</h1>
-        <hr className="bg-[#FF444A] w-[100px] h-[12px]" />
+        <hr className="bg-[#FF444A] w-[50px] md:w-[100px] h-[12px]" />
       </div>
     </div>
   );
